@@ -19,10 +19,10 @@
                     </svg>
                 </label>
                 <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Homepage</a></li>
+                    <li><a href="{{ route('home') }}">Homepage</a></li>
 
                     @auth
-                    <li><a>Eventos</a></li>
+                    <li><a href="{{ route('events') }}">Eventos</a></li>
                     <li><a>Adminsitrar eventos</a></li>
                     <li>
                         <form action="{{ route('logout') }}" method="POST">
@@ -34,7 +34,7 @@
 
                     @guest
                     <li><a href="{{ route('register') }}">Registrarse</a></li>
-                    <li><a>Iniciar Sesión</a></li>
+                    <li><a href="{{ route('login') }}">Iniciar Sesión</a></li>
                     @endguest
                 </ul>
             </div>
