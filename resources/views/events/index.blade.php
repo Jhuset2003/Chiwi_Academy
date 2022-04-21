@@ -3,6 +3,7 @@
 
 @section('content')
 
+<h2 class="text-3xl font-bold">Crear nuevo evento</h2>
 <form class="flex flex-col justify-center items-center gap-4" action="{{ route('events') }}" method="post">
     @csrf
 
@@ -38,6 +39,35 @@
 
     <button type="submit" class="btn btn-primary">Crear evento</button>
 
+
+
 </form>
+
+
+<h2 class="text-3xl font-bold">Eventos creados:</h2>
+
+<div class="flex justify-center items-center flex-wrap w-full gap-4">
+
+@if ($events->count())
+@foreach ($events as $event)
+
+<div class="card w-72 sm:w-96 bg-base-100 shadow-xl">
+    <div class="card-body">
+        <h2 class="card-title">{{ $event->name }}</h2>
+        <h2 class="font-bold">Creado por: {{ $event->user->name }}</h2>
+        <p>{{ $event->description }}</p>
+        <p>{{ $event->date }}</p>
+        <p>0/{{ $event->max_capability }}</p>
+        <a href="{{ $event->link }}">Entrar al evento</a>
+        <div class="card-actions justify-end">
+            <button class="btn btn-primary">Asistir</button>
+        </div>
+    </div>
+</div>
+@endforeach
+@else
+<p class="text-center">No hay eventos creados</p>
+@endif
+</div>
 
 @endsection

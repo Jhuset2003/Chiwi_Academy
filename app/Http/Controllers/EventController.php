@@ -9,7 +9,10 @@ class EventController extends Controller
 {
     public function index()
     {
-        return view('events.index');
+        $events = Event::all();
+        return view('events.index', [
+            'events' => $events
+        ]);
     }
 
     public function store(Request $request)
