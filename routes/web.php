@@ -4,6 +4,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\EventController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -25,6 +26,5 @@ Route::get('/register', [RegisterController::class, 'index'])->name('register')-
 Route::post('/register', [RegisterController::class, 'store']);
 
 
-Route::get('/events', function () {
-    return view('events.index');
-})->name('events')->middleware('auth');
+Route::get('/events', [EventController::class, 'index'])->name('events')->middleware('auth');
+Route::post('/events', [EventController::class, 'store'])->middleware('auth');
