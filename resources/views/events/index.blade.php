@@ -57,17 +57,24 @@
         <h2 class="font-bold">Creado por: {{ $event->user->name }}</h2>
         <p>{{ $event->description }}</p>
         <p>{{ $event->date }}</p>
-        <p>0/{{ $event->max_capability }}</p>
+        <p>{{ $event->tickets->count() }}/{{ $event->max_capability }} asistencias.</p>
         <a href="{{ $event->link }}">Entrar al evento</a>
         <div class="card-actions justify-end">
-            <button class="btn btn-primary">Asistir</button>
+            <form action="{{ route('events.assist', $event->id) }}" method="post">
+            @csrf
+            <button type="submit" class="btn btn-primary">Asistir</button>
+            </form>
         </div>
     </div>
 </div>
 @endforeach
+
+
 @else
 <p class="text-center">No hay eventos creados</p>
 @endif
 </div>
+
+    {{ $events->links('pagination::bootstrap-4') }}
 
 @endsection

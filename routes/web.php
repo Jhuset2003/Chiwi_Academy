@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AssistController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
@@ -28,3 +29,5 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/events', [EventController::class, 'index'])->name('events')->middleware('auth');
 Route::post('/events', [EventController::class, 'store'])->middleware('auth');
+
+Route::post('/events/{event}/assist', [AssistController::class, 'store'])->name('events.assist')->middleware('auth');
