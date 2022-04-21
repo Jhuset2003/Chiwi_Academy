@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
 use Illuminate\Http\Request;
 
 class EventController extends Controller
@@ -13,6 +14,29 @@ class EventController extends Controller
 
     public function store(Request $request)
     {
-        dd("ok");
+        //validate
+        $request->validate([
+            'name' => 'required',
+            'date' => 'required',
+            'max_capability' => 'required',
+            'link_session' => 'required',
+            'upload_image' => 'required',
+            'description' => 'required',
+        ]);
+
+        //store
+        Event::create([
+            'name' => $request->name,
+            'date' => $request->date,
+            'max_capability' => $request->max_capability,
+            'link' => $request->link_session,
+            'image' => $request->upload_image,
+            'description' => $request->description,
+            'user_id' => auth()->user()->id,
+        ]);
+
+        //redirect
+        return redirect()->route('dashboard');
+
     }
 }

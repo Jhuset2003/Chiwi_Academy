@@ -11,7 +11,7 @@
     <p class="text-red-500 text-xs">{{ $message }}</p>
     @enderror
 
-    <input value="{{ old('date') }}" type="datetime" placeholder="Fecha del evento" name="date" class="input w-full max-w-xs @error('date') input-bordered input-error @enderror">
+    <input value="{{ old('date') }}" type="datetime-local" placeholder="Fecha del evento" name="date" class="input w-full max-w-xs @error('date') input-bordered input-error @enderror">
     @error('date')
     <p class="text-red-500 text-xs">{{ $message }}</p>
     @enderror
