@@ -8,6 +8,7 @@ class DashboardController extends Controller
 {
     public function index()
     {
+        dd(auth()->user()->events);
         return view('dashboard');
     }
 }
