@@ -20,6 +20,15 @@ class Event extends Model
         'isImportant'
     ];
 
+    public function isAssistable()
+    {
+        return $this->tickets()->count() < $this->max_capability;
+    }
+
+    public function isRegistered(User $user){
+        return $this->tickets()->where('user_id', $user->id)->exists();
+    }
+
     public function user()
     {
         return $this->belongsTo(User::class);
