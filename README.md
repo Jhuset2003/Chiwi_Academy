@@ -73,7 +73,7 @@ ___
 
 </details>
 
-Instalaciones de Chiwi-Academy
+<h2> 🧭 Instalaciones de Chiwi-Academy 🧭 </h2>
 
 
 
@@ -131,10 +131,10 @@ el siguinte comando crea el modelo:
 ___
 **github**
 ___
-- **[Dargy Julieth Mogollon]( https://github.com/DargyJML)**
-- **[Albert Quintanilla]( https://github.com/Jhuset2003)**
-- **[Enmanuel Pereira]( https://github.com/iElectro13)**
-- **[Dario Higuera Moreno]( https://github.com/dariohimo)**
+- 👩‍💻 **[Dargy Julieth Mogollon]( https://github.com/DargyJML)**
+- 👨‍💻 **[Albert Quintanilla]( https://github.com/Jhuset2003)**
+- 👨‍💻 **[Enmanuel Pereira]( https://github.com/iElectro13)**
+- 👨‍💻 **[Dario Higuera Moreno]( https://github.com/dariohimo)**
 
 ___
 ---
