@@ -70,7 +70,50 @@ Instalaciones de Chiwi-Academy
 https://user-images.githubusercontent.com/90289472/164802317-7c6e83cc-7d82-49a7-a93f-78cc96c02d93.mp4
 
 
+___
 
+```php
+## command laravel artisan
+
+se crea un controlador con el siguiente comando: 
+-php artisan make:controller NombredelcontroladorController 
+
+en ese controlador se debe tener una tabla de datos con un modelo
+
+con el siguiente comando se puede realizar un modelo
+-php artisan make:model Nombredelmodelo 
+
+modelo acceso que te da la app a la bd 
+Event = nombre del modelo  
+m = genera migracion para ese modelo 
+f = genera factoria para ese modelo
+-php artisan make:model Event -m -f
+
+para dar estilos a daisy ui al inicial el trabajo: 
+-npm run watch
+
+para generar migraciones se realiza a travez del codigo: 
+-php artisan make:migration add_nombre_de_columna_nombredeBD 
+
+revierte todas las migraciones y las vuelve a crear a traves del siguiente comando:
+-php artisan make:migrate:refresh 
+
+para ejecutar comandos de php en la terminal se usa:
+-php artisan tinker
+para crear usuarios falsos en nuestras tablas realizamos el siguiente comando: 
+-App/Models/Event::factory()->times(#) ->create(['user_id' =>2]);
+
+creacion de una tabla 
+-php artisan make:migration create_nombre_de_la_tabla --create=nombre_de_la_tabla
+-php artisan migrate
+
+el siguiente comando es por si cometes un error con la base de datos, ya sea porque escribiste el nombre mal o algo relacionado, para eliminar esto usamos el siguiente comando:
+-php artisan migrate:rollback
+
+el siguinte comando crea el modelo: 
+-php artisan make:model nombre_de_la_BD
+
+```
 
 
 
