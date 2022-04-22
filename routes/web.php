@@ -28,7 +28,10 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 
 Route::get('/events', [EventController::class, 'index'])->name('events')->middleware('auth');
+Route::get('/events/{event}', [EventController::class, 'show'])->name('events.show')->middleware('auth');
 Route::post('/events', [EventController::class, 'store'])->middleware('auth');
+Route::delete('/events/{post}', [EventController::class, 'destory'])->name('events.destroy')->middleware('auth');
+
 
 Route::post('/events/{event}/assist', [AssistController::class, 'store'])->name('events.assist');
 Route::delete('/events/{event}/assist', [AssistController::class, 'destroy'])->name('events.assist');

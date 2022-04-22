@@ -9,10 +9,17 @@ class EventController extends Controller
 {
     public function index()
     {
-        $events = Event::paginate(10);
+        $events = Event::orderBy('date', 'asc')->paginate(10);
 
         return view('events.index', [
             'events' => $events
+        ]);
+    }
+
+    public function show(Event $event)
+    {
+        return view('events.show', [
+            'event' => $event
         ]);
     }
 
@@ -41,6 +48,17 @@ class EventController extends Controller
 
         //redirect
         return redirect()->route('dashboard');
+    }
 
+    //destroy
+    public function destroy(Event $event)
+    {
+        if (!$event->ownedBy(auth()->user())) {
+            return back();
+        }
+
+        $event->delete();
+
+        return redirect()->route('dashboard');
     }
 }

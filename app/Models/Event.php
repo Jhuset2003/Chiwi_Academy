@@ -25,8 +25,14 @@ class Event extends Model
         return $this->tickets()->count() < $this->max_capability;
     }
 
-    public function isRegistered(User $user){
+    public function isRegistered(User $user)
+    {
         return $this->tickets()->where('user_id', $user->id)->exists();
+    }
+
+    public function ownedBy(User $user)
+    {
+        return $this->user_id === $user->id;
     }
 
     public function user()
