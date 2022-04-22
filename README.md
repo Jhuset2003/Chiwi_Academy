@@ -11,7 +11,7 @@ ___
 
 🔍 Los usuarios podrán ver la descripción de un evento, apuntarse y desapuntarse. Podrán ver la lista de los eventos a los que se han apuntado. El administrador debe tener las herramientas para la gestión (CRUD) de los eventos.
 
-<h2> 📚 Requisitos Funcionales: 📚 <h2>
+<h2> 📚 Requisitos Funcionales: 📚 </h2>
 
 📗 Deben existir dos roles de usuario, Administrador y estudiante.
 
