@@ -1,4 +1,4 @@
-#  Chiwi Academy
+#  👨‍🎓 Chiwi Academy 👩‍🎓
 ___
 
 [![Logo](./img/logoChiwiAcademy.png "database Date")](http://chiwiacademy.gq)
@@ -129,7 +129,7 @@ el siguinte comando crea el modelo:
 
 ## Chiwi Academy **Coders**.
 ___
-**github**
+**github** :octocat:
 ___
 - 👩‍💻 **[Dargy Julieth Mogollon]( https://github.com/DargyJML)**
 - 👨‍💻 **[Albert Quintanilla]( https://github.com/Jhuset2003)**
@@ -140,17 +140,17 @@ ___
 ---
 
 ## deploy 
-**Heroku**
+**Heroku** 📜
 - **[HEROKU]( https://chiwi-academy.herokuapp.com/)**
 ---
 
-**GITHUB**
+**GITHUB** :octocat:
 - **[GITHUB]( https://github.com/Jhuset2003/Chiwi_Academy)**
 
 ___
 ---
 
-## Tecnologies :
+## 💻 Tecnologies :
 ___
 
 <div align="center">
