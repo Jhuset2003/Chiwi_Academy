@@ -65,7 +65,9 @@ Demo y code review**
 
 Instalaciones de Chiwi-Academy
 
-[![Alt text](https://img.youtube.com/vi/74rNgExnHfA/0.jpg)](https://www.youtube.com/watch?v=74rNgExnHfA)
+
+
+https://user-images.githubusercontent.com/90289472/164802317-7c6e83cc-7d82-49a7-a93f-78cc96c02d93.mp4
 
 
 
