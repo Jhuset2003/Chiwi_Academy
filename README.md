@@ -5,7 +5,7 @@ ___
 
 <details>
 
-<summary> <h1> 🔎 Contexto del proyecto 🔎 </h1> </summary>
+<summary>  🔎 Contexto del proyecto 🔎 </summary>
 
 🔍 Un colectivo de desarrollo de software quiere crear una aplicación web para gestionar sus eventos online como talleres, masterclass o webinars.
 
