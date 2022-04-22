@@ -1,7 +1,7 @@
 #  Chiwi Academy
 ___
 
-[![Logo](./img/logoChiwiAcademy.png "database Date")](https://chiwiacademy.gq)
+[![Logo](./img/logoChiwiAcademy.png "database Date")](http://chiwiacademy.gq)
 
 <details>
 
