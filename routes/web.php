@@ -6,13 +6,11 @@ use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', function () {
-    return view('index');
-})->name('home');
-
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
@@ -35,3 +33,4 @@ Route::delete('/events/{post}', [EventController::class, 'destory'])->name('even
 
 Route::post('/events/{event}/assist', [AssistController::class, 'store'])->name('events.assist');
 Route::delete('/events/{event}/assist', [AssistController::class, 'destroy'])->name('events.assist');
+
