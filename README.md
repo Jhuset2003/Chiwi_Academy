@@ -1,7 +1,7 @@
 #  Chiwi Academy
 ___
 
-![Logo](./img/logoChiwiAcademy.png "database Date")
+[![Logo](./img/logoChiwiAcademy.png "database Date")](https://chiwiacademy.gq)
 
 <details>
 
@@ -83,6 +83,18 @@ ___
 
 ___
 ---
+
+## deploy 
+**Heroku**
+- **[HEROKU]( https://chiwi-academy.herokuapp.com/)**
+---
+
+**GITHUB**
+- **[GITHUB]( https://github.com/Jhuset2003/Chiwi_Academy)**
+
+___
+---
+
 ## Tecnologies :
 ___
 
