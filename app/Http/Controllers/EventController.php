@@ -3,16 +3,22 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class EventController extends Controller
 {
     public function index()
     {
-        $events = Event::orderBy('date', 'asc')->paginate(10);
+        //events sorted by date, paginated and ignore the ones that are in the past using Carbon
+        $events = Event::where('date', '>=', Carbon::now())->orderBy('date', 'asc')->paginate(10);
+        
+        //events sorted by date, paginated and ignore the ones that are not in the past using Carbon
+        $pastEvents = Event::where('date', '<', Carbon::now())->orderBy('date', 'desc')->paginate(10);
 
         return view('events.index', [
-            'events' => $events
+            'events' => $events,
+            'pastEvents' => $pastEvents
         ]);
     }
 

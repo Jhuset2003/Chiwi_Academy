@@ -44,22 +44,36 @@
 </form>
 
 
-<h2 class="text-3xl font-bold">Eventos creados:</h2>
+<h2 class="text-3xl font-bold">Próximos eventos:</h2>
 
 <div class="flex justify-center items-center flex-wrap w-full gap-4">
 
     @if ($events->count())
     @foreach ($events as $event)
     <x-event :event="$event" />
-
     @endforeach
 
 
     @else
     <p class="text-center">No hay eventos creados</p>
     @endif
+    {{ $events->links('pagination::bootstrap-4') }}
+
 </div>
 
-{{ $events->links('pagination::bootstrap-4') }}
+@if ($pastEvents->count())
+<h2 class="text-3xl font-bold">Eventos pasados:</h2>
+
+<div class="flex justify-center items-center flex-wrap w-full gap-4">
+
+    @foreach ($pastEvents as $event)
+    <x-event :event="$event" />
+    @endforeach
+
+    {{ $pastEvents->links('pagination::bootstrap-4') }}
+
+</div>
+@endif
+
 
 @endsection
