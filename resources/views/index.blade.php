@@ -7,7 +7,7 @@
     @foreach ($events as $event)
 
     <div id="{{ $event->id }}" class="carousel-item w-full">
-        <img src="https://api.lorem.space/image/car?w=800&h=200&hash=8B7BCDC2" class="w-full" />
+        <img src="http://2.bp.blogspot.com/-MggjlVM-q7w/VOe4ASjfF9I/AAAAAAAAACc/ifm1l_wwG5I/s1600/tics.gif" class="w-full" />
     </div>
     @endforeach
 
