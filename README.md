@@ -1,69 +1,79 @@
-#  Chiwi Academy
+#  👨‍🎓 Chiwi Academy 👩‍🎓
 ___
 
 [![Logo](./img/logoChiwiAcademy.png "database Date")](http://chiwiacademy.gq)
 
 <details>
 
-<summary> Contexto del proyecto </summary>
+<summary>  🔎 Contexto del proyecto 🔎 </summary>
 
-Un colectivo de desarrollo de software quiere crear una aplicación web para gestionar sus eventos online como talleres, masterclass o webinars.
+🔍 Un colectivo de desarrollo de software quiere crear una aplicación web para gestionar sus eventos online como talleres, masterclass o webinars.
 
-Los usuarios podrán ver la descripción de un evento, apuntarse y desapuntarse. Podrán ver la lista de los eventos a los que se han apuntado. El administrador debe tener las herramientas para la gestión (CRUD) de los eventos.
+🔍 Los usuarios podrán ver la descripción de un evento, apuntarse y desapuntarse. Podrán ver la lista de los eventos a los que se han apuntado. El administrador debe tener las herramientas para la gestión (CRUD) de los eventos.
 
-Requisitos Funcionales:
+<h2> 📚 Requisitos Funcionales: 📚 </h2>
 
-Deben existir dos roles de usuario, Administrador y estudiante.
+📗 Deben existir dos roles de usuario, Administrador y estudiante.
 
-Se deben proteger las rutas para que el estudiante no pueda ver las vistas del administrador y viceversa.
+📙 Se deben proteger las rutas para que el estudiante no pueda ver las vistas del administrador y viceversa.
 
-En portada la aplicación tendrá un slider con las masterclasses destacadas. éstas serán seleccionables por el administrador.
+📘 En portada la aplicación tendrá un slider con las masterclasses destacadas. éstas serán seleccionables por el administrador.
 
-En portada habrá una lista paginada con todos los eventos ordenados del más cercano al más lejano.
+📗 En portada habrá una lista paginada con todos los eventos ordenados del más cercano al más lejano.
 
-Los eventos incluirán como mínimo: título, fecha/hora, número máximo de participantes, descripción y una imagen.
+📙 Los eventos incluirán como mínimo: título, fecha/hora, número máximo de participantes, descripción y una imagen.
 
-Los eventos pasados se deben mantener en la lista pero identificables como no disponibles.
+📘 Los eventos pasados se deben mantener en la lista pero identificables como no disponibles.
 
-Los usuarios deberán registrarse para apuntarse a un evento. Una vez apuntados no podran volver a hacerlo.
+📗 Los usuarios deberán registrarse para apuntarse a un evento. Una vez apuntados no podran volver a hacerlo.
 
-Al apuntarse a un evento recibirán un email (empresarial - html ) con el link (zoom, meets, etc..) en donde se va a realizar, así como recordando el título del evento, la hora y el día.
+📙 Al apuntarse a un evento recibirán un email (empresarial - html ) con el link (zoom, meets, etc..) en donde se va a realizar, así como recordando el título del evento, la hora y el día.
 
-Los usuarios podrán ver en una página la lista de los eventos a los que están registrados.
+📘 Los usuarios podrán ver en una página la lista de los eventos a los que están registrados.
 
-El administrador podrá hacer CRUD de los eventos.
+📗 El administrador podrá hacer CRUD de los eventos.
 
-Cuando un evento esté lleno (máximo número de participantes) nadie podrá registrarse.
+📙 Cuando un evento esté lleno (máximo número de participantes) nadie podrá registrarse.
 
-Requisitos no funcionales:
+<h2> 📝 Requisitos no funcionales: 📝 </h2>
 
-La web deberá estar desplegada aunque esté en desarrollo.
-Se deberá usar Laravel.
-El envío de el email se deberá hacer usando un sistema de colas.
-Para el frontend se deben usar componentes de blade.
+✏️ La web deberá estar desplegada aunque esté en desarrollo.
+    
+✏️ Se deberá usar Laravel.
+    
+✏️ El envío de el email se deberá hacer usando un sistema de colas.
+    
+✏️ Para el frontend se deben usar componentes de blade.
 
-Modalidades pedagógicas
-Un sprint de una semana iniciando desde el momento en que se envíe el brieff hasta el viernes 22 de abril del 2022 a las 23:59.
+<h2> 🏛️ Modalidades pedagógicas 🏛️ </h2>
+🏛️ Un sprint de una semana iniciando desde el momento en que se envíe el brieff hasta el viernes 22 de abril del 2022 a las 23:59.
 
-Trabajo en equipo.
+🏛️ Trabajo en equipo.
 
-Modalidades de evaluación
-Demo por equipos el día Lunes 25 de abril del 2022.
+<h2> 📈 Modalidades de evaluación 📈 </h2>
+    
+📈 Demo por equipos el día Lunes 25 de abril del 2022.
 
-Entregables
-- Un link a un repositorio de github
-- Product backlog.
-- Readme del repositorio con:
-Briefing y explicación del proyecto en el
-Mockup
-Url en despliegue.
-Presentación en diapositivas
-Demo y code review**
+<h2> 💻 Entregables 💻 </h2>
+    
+💻 Un link a un repositorio de github
+
+💻 Product backlog.
+
+💻 Readme del repositorio con:
+    
+💻 Briefing y explicación del proyecto en el Mockup
+    
+💻 Url en despliegue.
+    
+💻 Presentación en diapositivas
+    
+💻 Demo y code review**
 
 
 </details>
 
-Instalaciones de Chiwi-Academy
+<h2> 🧭 Instalaciones de Chiwi-Academy 🧭 </h2>
 
 
 
@@ -119,28 +129,28 @@ el siguinte comando crea el modelo:
 
 ## Chiwi Academy **Coders**.
 ___
-**github**
+**github** :octocat:
 ___
-- **[Dargy Julieth Mogollon]( https://github.com/DargyJML)**
-- **[Albert Quintanilla]( https://github.com/Jhuset2003)**
-- **[Enmanuel Pereira]( https://github.com/iElectro13)**
-- **[Dario Higuera Moreno]( https://github.com/dariohimo)**
+- 👩‍💻 **[Dargy Julieth Mogollon]( https://github.com/DargyJML)**
+- 👨‍💻 **[Albert Quintanilla]( https://github.com/Jhuset2003)**
+- 👨‍💻 **[Enmanuel Pereira]( https://github.com/iElectro13)**
+- 👨‍💻 **[Dario Higuera Moreno]( https://github.com/dariohimo)**
 
 ___
 ---
 
 ## deploy 
-**Heroku**
+**Heroku** 📜
 - **[HEROKU]( https://chiwi-academy.herokuapp.com/)**
 ---
 
-**GITHUB**
+**GITHUB** :octocat:
 - **[GITHUB]( https://github.com/Jhuset2003/Chiwi_Academy)**
 
 ___
 ---
 
-## Tecnologies :
+## 💻 Tecnologies :
 ___
 
 <div align="center">
