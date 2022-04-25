@@ -1,7 +1,7 @@
 #  👨‍🎓 Chiwi Academy 👩‍🎓
 ___
 
-[![Logo](./img/logoChiwiAcademy.png "database Date")](http://chiwiacademy.gq)
+[![Logo](./img/logoChiwiAcademy.jpg "database Date")](http://chiwiacademy.gq)
 
 <details>
 
